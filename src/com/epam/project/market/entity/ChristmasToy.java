@@ -3,18 +3,18 @@ package com.epam.project.market.entity;
 import java.util.Objects;
 
 public class ChristmasToy extends BaseGoods{
-    private String color;
+    private Color color;
 
-    public ChristmasToy(int price, String title, String color) {
+    public ChristmasToy(int price, String title, Color color) {
         super(price, title);
         this.color = color;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

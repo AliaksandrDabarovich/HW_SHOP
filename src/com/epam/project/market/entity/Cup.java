@@ -2,7 +2,7 @@ package com.epam.project.market.entity;
 
 import java.util.Objects;
 
-public class Cup extends BaseGoods{
+public class Cup extends BaseGoods implements Comparable<Cup>{
     private int maxTemperature;
 
     public Cup(int price, String title, int maxTemperature) {
@@ -38,4 +38,10 @@ public class Cup extends BaseGoods{
                 "maxTemperature=" + maxTemperature +
                 "} " + super.toString();
     }
+
+    @Override
+    public int compareTo(Cup cup) {
+         return super.getTitle().compareTo(cup.getTitle());
+        }
+
 }
